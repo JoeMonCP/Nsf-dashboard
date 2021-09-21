@@ -38,7 +38,6 @@ nav .logo {
 }
 
 nav .menuItems {
-  margin-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,6 +233,10 @@ nav .userDetails .dropdown button:focus {
   margin-top: 20px;
 }
 
+.sidebar .dropdown .dropdown-item {
+  font-size: 14px;
+}
+
 .sidebar .dropdown button {
   color: #5CB949 !important;
   background: #FFFFFF;
@@ -426,11 +429,12 @@ nav .userDetails .dropdown button:focus {
 }
 
 .tab-content .wrapper::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #bfc4c9;
+  border-radius: 20px;
 }
 
 .tab-content .wrapper::-webkit-scrollbar-thumb {
-  background: #bfc4c9;
+  background: #7f8285;
   border-radius: 20px;
 }
 
@@ -536,9 +540,6 @@ nav .userDetails .dropdown button:focus {
 }
 
 @media screen and (max-width: 450px) {
-  .logo {
-    width: 200px !important;
-  }
   .nav.nav-tabs .nav-item:nth-child(3) {
     width: 100%;
   }
@@ -575,6 +576,31 @@ nav .userDetails .dropdown button:focus {
   #main {
     margin: 5px !important;
     padding: 10px !important;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .userDetails .material-icons {
+    margin: 0 !important;
+    margin-left: 5px;
+  }
+  .userDetails .dropdown-toggle {
+    font-size: 12px;
+  }
+  .logo {
+    width: 200px !important;
+  }
+  .sidebar, .bookmarkBar {
+    margin-top: 53px !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .logo {
+    width: 150px !important;
+  }
+  .sidebar, .bookmarkBar {
+    margin-top: 42px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

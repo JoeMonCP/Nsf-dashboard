@@ -23,9 +23,9 @@ function openNav() {
 
   function openBookmark () {
 
-    // if (window.innerWidth > 1100) {
-    //   return 
-    // }
+    if (window.innerWidth > 1100) {
+      return 
+    }
  
     if(bookmarkBar.offsetWidth == 0) {
         bookmarkBar.style.width = "300px";

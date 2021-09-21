@@ -29,7 +29,6 @@ nav {
         width: 300px;
     }
     .menuItems {
-        margin-right: 20px;
         display: flex;
         align-items: center;
 
@@ -185,6 +184,9 @@ nav {
         box-shadow: none !important;
         margin-bottom: 50px;
         margin-top: 20px;
+        .dropdown-item {
+            font-size: 14px;
+        }
         button {
             color: #5CB949 !important;
             background: #FFFFFF;
@@ -367,10 +369,12 @@ nav {
             width: 5px;
           }
           &::-webkit-scrollbar-track {
-            background: #f1f1f1;
+            background:#bfc4c9  ;
+            border-radius: 20px;
+
           }
           &::-webkit-scrollbar-thumb {
-            background: #bfc4c9;
+            background: #7f8285;
             border-radius: 20px;
     
             }
@@ -452,11 +456,11 @@ nav {
 
       }
 
-      .Reports {}
+    //   .Reports {}
 
-      .BulletinBoard {
+    //   .BulletinBoard {
 
-      }
+    //   }
   }
 
 
@@ -471,7 +475,7 @@ nav {
 }
 
 @media screen and (max-width: 450px) {
-    .logo {width: 200px !important;}
+  
     .nav.nav-tabs .nav-item:nth-child(3) {
         width: 100%;
         button {
@@ -509,4 +513,33 @@ nav {
         padding:10px !important ;
     }
 
+}
+
+@media screen and (max-width: 520px) {
+    .userDetails {
+        .material-icons {
+            margin: 0 !important;
+            margin-left: 5px;
+        }
+
+        .dropdown-toggle {
+            font-size: 12px;
+        }
+    }
+
+    .logo {width: 200px !important;}
+    .sidebar, .bookmarkBar {
+        margin-top: 53px !important;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .logo {
+        width: 150px !important;
+    }
+    .sidebar, .bookmarkBar {
+        margin-top: 42px !important;
+    }
+    
 }
